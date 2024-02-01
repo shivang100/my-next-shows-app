@@ -29,9 +29,9 @@ export default function Header() {
     };
   }, []);
   return (
-    <div className="bg-black w-full text-white pl-20">
+    <div className="bg-black w-full text-white lg:pl-20 pl-4">
       <div className="lg:flex md:flex flex py-3 lg:py-5 items-center ">
-        <div className="font-serif font-light italic lg:mr-20 text-lg">
+        <div className="font-serif font-light italic lg:mr-20 mr-6 text-lg">
           ticketBook
         </div>
         <div className="hidden lg:block mt-1 ml-40 ">
@@ -79,19 +79,19 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="flex border-2 rounded-xl lg:ml-10  ml-24 w-60 shadow-xl h-8">
+        <div className="flex border-2 rounded-xl lg:ml-10  md:ml-24 sm:ml-2 lg:w-60 md:w-60 w-60 shadow-xl h-8">
           <CiSearch className="ml-2 my-auto cursor-pointer" />
           <input
             type="text"
-            className="focus:outline-none w-60 pl-2 bg-black text-white rounded-2xl "
+            className="focus:outline-none lg:w-60  md:w-60 w-28 pl-2 bg-black text-white rounded-2xl "
             placeholder="Search Movies Here"
           />
         </div>
 
-        <div className="flex gap-10 ml-2">
-          <CiBellOn className="ml-5 text-2xl cursor-pointer text-white" />
+        <div className="flex gap-10 lg:ml-2">
+          <CiBellOn className="lg:ml-3 ml-10 text-2xl cursor-pointer text-white" />
         </div>
-        <div className="lg:hidden ml-20">
+        <div className="lg:hidden">
           <button
             className="p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -28,14 +28,14 @@ export default function ShowDetails() {
   return (
     <div className="w-full bg-or text-white">
       {show && (
-        <div className="lg:flex lg:flex-col">
-          <div class="lg:flex lg:pt-20 md:pt-10 lg:mx-40 lg:gap-10 md:flex md:gap-10">
+        <div className="lg:flex lg:flex-col ">
+          <div class="lg:flex lg:pt-20 md:pt-10 pt-10 lg:mx-40 lg:gap-10 md:flex md:gap-10 ">
             {show.image?.original ? (
               <Image
                 height={200}
                 width={300}
                 alt={show.name}
-                className="h-76 md:ml-10 "
+                className="h-76 md:ml-10 ml-10 "
                 src={show.image?.original}
               />
             ) : (
@@ -48,7 +48,7 @@ export default function ShowDetails() {
               />
             )}
             <div>
-              <div className="flex flex-col gap-4">
+              <div className="lg:flex lg:flex-col lg:gap-4 ml-10 lg;ml-0 md:ml-0 mt-5 lg:mt-0 md:mt-0 flex flex-col gap-5">
                 <p className="text-3xl font-medium font-serif italic">
                   {show.name}
                 </p>
@@ -91,16 +91,16 @@ export default function ShowDetails() {
                 </div>
               </div>
               <Link href="/Show#book">
-                <div className="mt-28 w-44">
-                  <button className="lg:py-2 bg-pe hover:bg-red-700 border rounded-md border-gray-300 px-5 md:py-2 flex text-white font-light">
+                <div className="mt-28 ml-10 lg:ml-0 md:ml-0 w-44">
+                  <button className="lg:py-2 py-4  bg-pe hover:bg-red-700 border rounded-md border-gray-300 px-5 md:py-2 flex text-white font-light">
                     Book a Movie Ticket
                   </button>
                 </div>
               </Link>
             </div>
           </div>
-          <div className="lg:px-80 md:mx-28 lg:mx-40 md:mt-40 md:pb-20 lg:mb-20 lg:mt-40 items-center justify-center text-center">
-            <div className="items-center w-[550px] h-[600px] font-serif italic justify-center border flex flex-col">
+          <div className="lg:px-80 md:mx-28 lg:mx-40 md:mt-40 md:pb-20 lg:mb-20 lg:mt-40 mt-20 items-center justify-center text-center mx-16">
+            <div className="items-center lg:w-[550px] lg:h-[600px] md:w-[550px] md:h-[600px] h-full w-full  font-serif italic justify-center lg:border md:border flex flex-col">
               <h1 className="text-4xl">Book Ticket</h1>
               <form className="mt-8  ">
                 <div className="flex">
@@ -176,7 +176,7 @@ export default function ShowDetails() {
                 <div className="bg-pe lg:mx-4 md:mx-2 mt-4 mb-10 ">
                   <button
                     id="book"
-                    className=" lg:py-2 md:py-2 flex items-center mx-auto text-white rounded font-light"
+                    className=" lg:py-2 md:py-2 py-4 flex items-center mx-auto text-white rounded font-light"
                   >
                     Book Ticket
                   </button>
